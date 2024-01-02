@@ -136,7 +136,9 @@ a {
   margin-right: 80px;
 
 }
-
+.project-card {
+    margin: 30px;
+}
 .button {
     background-color: white;
     border: solid;
