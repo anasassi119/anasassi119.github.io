@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,21 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
 </head>
+
 <body>
+
     <header>
         <div class="header-container">
-            <a href="#">
-
-		<img src="Untitled-1.png" alt="Anas Assi | Computer Engineer" border="0">
+            <a href="https://anasassi.com">
+                <img src="Untitled-1.png" alt="Anas Assi | Computer Engineer" border="0">
             </a>
             <nav>
                 <ul>
-                    <li><i class="fas fa-user"></i><a href="#about">About Me</a></li>
-                    <li><i class="fas fa-laptop-code"></i><a href="#skills">Skills</a></li>
-                    <li><i class="fas fa-clone"></i><a href="#projects">Projects</a></li>
-                    <li><i class="fas fa-id-card"></i><a href="mailto:me@anasassi.com">Contact Me</a></li>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#skills"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="mailto:me@anasassi.com"><i class="fas fa-phone-alt"></i> Contact Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,45 +30,47 @@
 
     <main>
 
-
-        <section id="about">
+        <section id="about" role="region" aria-labelledby="about-heading">
             <div class="container">
                 <div class="about-content">
                     <div class="text-content">
-                        <h2><span style="color: #46aad3;">I'm Anas Assi, a </span><span style="color: #408072;">Computer Systems Engineer!</span></h2>
+                        <h4>Hi! Welcome to my site!</h4>
+                        <h1><span style="color: var(--primary-color);">I'm Anas Assi, a </span><span style="color: var(--secondary-color);">Computer Systems Engineer!</span></h1>
                         <p>A fast learner with a passion for growth and improvement. I'm very interested in Software Development, Artificial Intelligence, Software-as-a-Service, and Digital Marketing. I'm looking for opportunities to achieve a career path that would allow me to thrive and reach new heights.</p>
-                        <a href="#" class="button">Learn More</a>
                     </div>
-                    <img src="me2.png" alt="My Image">
+                    <figure>
+                        <img src="me2.png" alt="My Image">
+                    </figure>
                 </div>
+                <a href="#skills" class="button">Learn More</a>
+                <a href="#projects" class="button">My Projects</a>
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" role="region" aria-labelledby="skills-heading">
             <div class="container">
-                <h2>My Skills</h2>
+                <h2 id="skills-heading">About Me</h2>
+                <p>Hello, I am Anas Assi. I am a Computer Systems Engineer. I got my BSc from Birzeit University, in Ramallah.</p>
                 <ul>
                     <li>Fast Learner</li>
                     <li>Team Worker</li>
                     <li>Team Leader</li>
-                    <li>Great Communication Skills</li>
                     <li>Can work under pressure</li>
+                    <li>Great Communication Skills</li>
                     <li>Can solve problems systematically</li>
                 </ul>
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" role="region" aria-labelledby="projects-heading">
             <div class="container">
-                <h2>Projects</h2>
+                <h2 id="projects-heading">Projects</h2>
                 <div class="project-card">
-                    <img src="Project-2.png" alt="My First Project Image">
                     <h3>Online Onboarding Backend Software</h3>
                     <p>In this project, we have implemented a fully-working Deep Learning system that implemented the latest techniques in AI to detect fake IDs in a banking onboarding system. This system used a proprietary algorithm to detect spoof applicant images using light analysis, depth tracking, and many other data points, its job is to substantially reduce fraud and money laundring in banking applications, in addition to providing a frictionless onboarding experience to new clients.</p>
                     <a href="https://github.com/anasassi119/kyc_system" class="button" target="_blank">View Project</a>
                 </div>
                 <div class="project-card">
-                    <img src="Project-3.png" alt="My Second Project Image">
                     <h3>A.I. dependent delivery system</h3>
                     <p>In this project, we have implemented an Android app that uses Artificial Intelligence to find the shortest and least expensive path for parcel delivery, for delivery companies.</p>
                     <a href="https://github.com/laithsiam1/ai-delivery" class="button" target="_blank">View Project</a>
@@ -75,31 +78,26 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" role="region" aria-labelledby="contact-heading">
             <div class="container">
-                <h2>Get in Touch</h2>
+                <h2 id="contact-heading">Get in Touch</h2>
                 <p>I'm always happy to chat! Feel free to contact me using <a href="mailto:me@anasassi.com">me@anasassi.com</a>, or using the <a href="#">Contact Me</a> button, or reach out on the social media links below! <i class="far fa-smile"></i></p>
-
-
             </div>
-
         </section>
     </main>
 
-    <footer>
-<div class="f-container">
-<ul>
-                    <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/anas.assii" target="_blank">Facebook</a></li>
-                    <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/970595959159" target="_blank">WhatsApp</a></li>
-                    <li><i class="fab fa-instagram"></i><a href="https://instagram.com/anas.assii" target="_blank">Instagram</a></li>
-                    <li><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/anasassi/" target="_blank">LinkedIn</a></li>
-                </ul>
-	
-    
-	
+    <footer role="contentinfo" aria-labelledby="footer-heading">
+        <div class="f-container">
+            <ul>
+                <li><a href="https://www.facebook.com/anas.assii" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://wa.me/970595959159" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="https://instagram.com/anas.assii" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/anasassi/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+            </ul>
             <p>&copy; 2023 Anas Assi. All rights reserved.</p>
         </div>
     </footer>
 
 </body>
+
 </html>
