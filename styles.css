@@ -3,6 +3,7 @@
     --secondary-color: #008AAA;
     --accent-color: #3BBADB;
   }
+
 body {
     font-family: Poppins;
     margin: 0;
@@ -48,6 +49,10 @@ body {
 .about-content {
   display: flex;
   align-items: center; 
+}
+
+#mobileImage {
+  display: none;
 }
 
 .about-content img {
@@ -259,9 +264,17 @@ section {
     margin: 0px;
   }
 
-  .about-content img {
-    height: 250px;
-    width: 250px;
+
+  #desktopImage {
+    display: none;
+  }
+
+
+
+  #mobileImage {
+    display: grid;
+    width: 80vw;
+    height: auto;
     margin-left: 0px;
     margin-right: 0px;
     align-items: center;
