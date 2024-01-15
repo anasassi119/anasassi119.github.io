@@ -70,6 +70,7 @@ body {
   border: 2px solid var(--secondary-color); /* Border color */
   border-radius: 10px;   /* Border radius for rounded corners */
   padding: 5px 10px 5px 10px;
+  transition: 100ms;
   
 }
 
@@ -172,12 +173,13 @@ a {
 h2 {
   color: var(--primary-color);
   text-shadow: 1px 2px 0px black;
+  transition: 100ms;
 }
 
 h2:hover {
   color: var(--primary-color);
   text-shadow: 1px 4px 5px black;
-  transition: 200ms;
+  transition: 300ms;
 }
 
 a:hover {
